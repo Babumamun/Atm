@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<GridPane alignment="CENTER" hgap="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="299.0" prefWidth="604.0" vgap="10.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="317.0" minWidth="10.0" prefWidth="270.0" />
+    <ColumnConstraints hgrow="SOMETIMES" maxWidth="336.0" minWidth="10.0" prefWidth="320.0" />
+  </columnConstraints>
+  <rowConstraints>
+      <RowConstraints maxHeight="120.0" minHeight="0.0" prefHeight="84.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="200.0" minHeight="10.0" prefHeight="78.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="216.0" minHeight="10.0" prefHeight="91.0" vgrow="SOMETIMES" />
+    <RowConstraints maxHeight="184.0" minHeight="10.0" prefHeight="119.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <Label alignment="CENTER_RIGHT" prefHeight="28.0" prefWidth="302.0" text="Password" GridPane.rowIndex="2" />
+      <TextField fx:id="pwd" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <TextField fx:id="cardid" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="26.0" prefWidth="289.0" text="Card Number" GridPane.rowIndex="1" />
+      <Label alignment="CENTER_RIGHT" contentDisplay="CENTER" prefHeight="21.0" prefWidth="296.0" text="Input your Id" />
+      <Label alignment="TOP_LEFT" prefHeight="17.0" prefWidth="302.0" text=" &amp; passsword" GridPane.columnIndex="1" />
+      <Button fx:id="ok" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#onOKClick" prefHeight="28.0" prefWidth="60.0" text="OK" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+   </children>
+</GridPane>
